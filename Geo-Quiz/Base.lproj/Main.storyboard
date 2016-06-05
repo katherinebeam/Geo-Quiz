@@ -1,25 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Fc-Y5-wfz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Quiz View Controller-->
+        <scene sceneID="Vfa-SU-7sH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Fc-Y5-wfz" customClass="QuizViewController" customModule="Geo_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Xgo-Qo-2V2"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ca-lj-PIy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="7Qw-f6-Y6w">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vwh-IA-RkS" userLabel="VerticalStackView">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2C-IH-Ahq" userLabel="Horizontal SV1">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-wa-wcc">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="flagButtonPressed:" destination="8Fc-Y5-wfz" eventType="touchUpInside" id="Qt4-sW-dQg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="UZR-J8-xRI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6L-p2-Qt4" userLabel="Horizontal SV2">
+                                        <rect key="frame" x="0.0" y="145" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8u-Bk-Xsw">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="flagButtonPressed:" destination="8Fc-Y5-wfz" eventType="touchUpInside" id="oQ5-Iw-gVf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="AiZ-NP-toh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eg5-XA-gYe" userLabel="Horizontal SV3">
+                                        <rect key="frame" x="0.0" y="290" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLT-Fy-nD0">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="flagButtonPressed:" destination="8Fc-Y5-wfz" eventType="touchUpInside" id="mbP-81-z50"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="FWI-Cz-aBU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxo-B4-zCW" userLabel="Horizontal SV4">
+                                        <rect key="frame" x="0.0" y="435" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijV-3h-xL5">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Hear Phrase"/>
+                                                <connections>
+                                                    <action selector="hearPhrase:" destination="8Fc-Y5-wfz" eventType="touchUpInside" id="94X-QG-S8B"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="60D-mE-tdp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vwh-IA-RkS" secondAttribute="trailing" id="9Ao-Ni-ldu"/>
+                            <constraint firstItem="Vwh-IA-RkS" firstAttribute="top" secondItem="Xgo-Qo-2V2" secondAttribute="bottom" id="EJr-zp-NsA"/>
+                            <constraint firstItem="Vwh-IA-RkS" firstAttribute="leading" secondItem="7Qw-f6-Y6w" secondAttribute="leadingMargin" id="IsM-qi-bAn"/>
+                            <constraint firstItem="5Ca-lj-PIy" firstAttribute="top" secondItem="Vwh-IA-RkS" secondAttribute="bottom" id="eg5-jf-qln"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flagButton1" destination="rb0-wa-wcc" id="f6m-fu-zoA"/>
+                        <outlet property="flagButton2" destination="i8u-Bk-Xsw" id="Bas-Af-Ebk"/>
+                        <outlet property="flagButton3" destination="TLT-Fy-nD0" id="MqZ-tb-94Y"/>
+                        <outlet property="repeatPhraseButton" destination="ijV-3h-xL5" id="eaI-Yr-YhZ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UqT-TS-z1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1078" y="204"/>
         </scene>
     </scenes>
 </document>

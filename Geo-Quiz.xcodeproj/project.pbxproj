@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0087B1D01D04BA6500DFDB07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B1CF1D04BA6500DFDB07 /* AppDelegate.swift */; };
-		0087B1D21D04BA6500DFDB07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B1D11D04BA6500DFDB07 /* ViewController.swift */; };
+		0087B1D21D04BA6500DFDB07 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B1D11D04BA6500DFDB07 /* QuizViewController.swift */; };
 		0087B1D51D04BA6500DFDB07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0087B1D31D04BA6500DFDB07 /* Main.storyboard */; };
 		0087B1D71D04BA6500DFDB07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0087B1D61D04BA6500DFDB07 /* Assets.xcassets */; };
 		0087B1DA1D04BA6500DFDB07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0087B1D81D04BA6500DFDB07 /* LaunchScreen.storyboard */; };
+		0087B1E21D04BA7B00DFDB07 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B1E11D04BA7B00DFDB07 /* Country.swift */; };
+		0087B1E41D04BAE300DFDB07 /* QuizViewController+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B1E31D04BAE300DFDB07 /* QuizViewController+Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0087B1CC1D04BA6500DFDB07 /* Geo-Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geo-Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0087B1CF1D04BA6500DFDB07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0087B1D11D04BA6500DFDB07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0087B1D11D04BA6500DFDB07 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		0087B1D41D04BA6500DFDB07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0087B1D61D04BA6500DFDB07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0087B1D91D04BA6500DFDB07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0087B1DB1D04BA6500DFDB07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0087B1E11D04BA7B00DFDB07 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		0087B1E31D04BAE300DFDB07 /* QuizViewController+Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QuizViewController+Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		0087B1CE1D04BA6500DFDB07 /* Geo-Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				0087B1E11D04BA7B00DFDB07 /* Country.swift */,
 				0087B1CF1D04BA6500DFDB07 /* AppDelegate.swift */,
-				0087B1D11D04BA6500DFDB07 /* ViewController.swift */,
+				0087B1D11D04BA6500DFDB07 /* QuizViewController.swift */,
+				0087B1E31D04BAE300DFDB07 /* QuizViewController+Functions.swift */,
 				0087B1D31D04BA6500DFDB07 /* Main.storyboard */,
 				0087B1D61D04BA6500DFDB07 /* Assets.xcassets */,
 				0087B1D81D04BA6500DFDB07 /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0087B1D21D04BA6500DFDB07 /* ViewController.swift in Sources */,
+				0087B1D21D04BA6500DFDB07 /* QuizViewController.swift in Sources */,
+				0087B1E41D04BAE300DFDB07 /* QuizViewController+Functions.swift in Sources */,
+				0087B1E21D04BA7B00DFDB07 /* Country.swift in Sources */,
 				0087B1D01D04BA6500DFDB07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
